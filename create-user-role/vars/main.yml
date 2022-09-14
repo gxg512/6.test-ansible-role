@@ -1,0 +1,3 @@
+user_name: "test_ansible_user"
+user_group: "test_ansible_group"
+upassword: "test2"

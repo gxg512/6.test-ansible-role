@@ -1,0 +1,6 @@
+---
+- name: "create new users"
+  hosts: clients
+  become: yes
+  roles:
+    - create-user-role

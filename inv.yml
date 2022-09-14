@@ -1,0 +1,5 @@
+[clients]
+myhost ansible_host=192.168.1.115
+
+[localhost]
+192.168.1.104

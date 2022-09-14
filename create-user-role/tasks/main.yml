@@ -1,0 +1,14 @@
+---
+- name: create a new group
+  ansible.builtin.group:
+    name: "{{ user_group }}"
+    state: present
+
+- name: Add the user 'johnd' with a specific uid and a primary group of 'admin'
+  ansible.builtin.user:
+     name: "{{ user_name }}"
+     comment: John Doe
+     password: "{{ upassword | password_hash('sha512') }}"
+     group: "{{ user_group }}"
+     state: present
+
